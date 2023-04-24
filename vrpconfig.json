@@ -1,0 +1,44 @@
+{
+    "num_ants":100,
+    "ant_capacity":6000,
+    "num_iterations":10,
+    "depot_id":0,
+    "alpha":0.5,
+    "beta":0.5,
+    "rho":0.05,
+    "deliver_info_path":"./envs/data/delivery_info.json",
+    "distance_matrix_path":"./envs/data/distance_matrix.csv",
+    "conv_time_to_cost": 14,
+    "costs_vehicles": [
+      10,
+      5,
+      5,
+      5,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      5
+    ],
+    "depot": [
+      45.062786,
+      7.678686
+    ],
+    "n_deliveries": 100,
+    "n_vehicles": 8,
+    "vols_vehicles": [
+      50,
+      10,
+      10,
+      10,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      10
+    ]
+}
