@@ -17,8 +17,26 @@ To use the VRP solution, follow these steps:
 3. In the repository directory, install the packages using `pip install -r requirements.txt` (virtual environment is recommended)
 3. Check out the repository files and script structures:
 - `envs`: This folder contains the json config file. First, change the config parameters (including the ACO parameters according to your desire).
-- `data`: Copy and paste your VRP data into this folder. There must be two files at least, first the `delivery_info.json` file and also the `distance_matrix.csv` file. Pay attention to the typo of the filenames.
+- `envs/data`: Copy and paste your VRP data into this folder (There is no data folder here, you should add it yourself). There must be two files at least, first the `delivery_info.json` file and also the `distance_matrix.csv` (distances between nodes) file. Pay attention to the typo of the filenames.
 4. Run `python main.py` to get the ACO results. You can obsereve the optimal route(s) and the correspoding cost to it. (You can also write additonal codes to this file in order to get further results with all solutions.
+
+Example of `delivery_info.json` item:
+
+```javascript
+{
+  "1": {
+    "crowd_cost": 5.501245440387771,
+    "crowdsourced": 0,
+    "id": 1,
+    "lat": 45.07134426639958,
+    "lng": 7.693087346614441,
+    "p_failed": 0.7883287888960132,
+    "time_window_max": 9,
+    "time_window_min": 6,
+    "vol": 0.882859998043791
+  }
+ }
+```
 
 ## Contributions
 
